@@ -10,3 +10,5 @@ Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
 Ingredient.create(name: "lime")
 Ingredient.create(name: "brown sugar")
+
+Cocktail.create(name: "Mojito", url: "https://images.unsplash.com/photo-1570036394455-f3f3f281e403?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1065&q=80")
