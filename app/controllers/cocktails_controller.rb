@@ -25,6 +25,6 @@ class CocktailsController < ApplicationController
   #create strong params to be able to save data!
 
   def cocktail_params
-    params.require(:cocktail).permit(:name)
+    params.require(:cocktail).permit(:name, :photo)
   end
 end
