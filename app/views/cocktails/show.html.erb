@@ -1,14 +1,14 @@
-<h1><%= @cocktail.name %></h1>
-<p>
-  <ul>
-  <% @cocktail.doses.each do |dose|  %>
-    <li>
-    <%= dose.description %>
-      <%= dose.ingredient.name %>
-    </li>
-  <% end %>
-  </ul>
-</p>
+<div class="show-container">
+    <div class="cocktail-card">
+        <div class="cocktail-heading"><%= @cocktail.name%></div>
+        <div class="ingredients">Ingredients</div>
+        <div class="description">
+            <% @cocktail.doses.each do |dose|  %>
+            <%= dose.description %> <%= dose.ingredient.name %><br>
+            <% end %>
+        </div>
+    </div>
+</div>
+
 <%= link_to "Home", cocktails_path %>
 <%= link_to "Add a new ingredient", new_cocktail_dose_path(@cocktail) %>
-

@@ -13,10 +13,21 @@ Ingredient.destroy_all
 
 puts "creating new Ingredients"
 #ingredients = Ingredient.create([{name: "lemon"}, {name: "ice"}, {name: "mint leaves"}, {name: "lime"}, {name: "brown sugar"}])
- Ingredient.create(name: "ice")
- Ingredient.create(name: "mint leaves")
- Ingredient.create(name: "lime")
- Ingredient.create(name: "brown sugar")
+ Ingredient.create(name: "Ice")
+ Ingredient.create(name: "Mint leaves")
+ Ingredient.create(name: "Lime")
+ Ingredient.create(name: "Brown sugar")
+ Ingredient.create(name: "Rum")
+ Ingredient.create(name: "Lemon")
+ Ingredient.create(name: "Coke")
+ Ingredient.create(name: "Soda Water")
+ Ingredient.create(name: "Honey")
+ Ingredient.create(name: "Tomato juice")
+ Ingredient.create(name: "Vodka")
+ Ingredient.create(name: "Tequila")
+ Ingredient.create(name: "Sugar Syrup")
+
+
 
 puts "creating new Cocktails"
 file = URI.open("https://images.unsplash.com/photo-1562890042-cb70b22b294d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80rai")
@@ -58,5 +69,6 @@ file = URI.open("https://www.bbcgoodfood.com/sites/default/files/styles/recipe/p
 cocktail = Cocktail.new(name: "Cubanito")
 cocktail.photo.attach(io: file, filename: 'cocktail.png', content_type: 'image/png')
 cocktail.save
+
 
 puts "Hooray"
