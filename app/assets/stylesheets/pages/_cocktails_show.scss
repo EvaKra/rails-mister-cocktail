@@ -8,10 +8,13 @@
 }
 
 .cocktail-card {
-    border: 2px solid black;
     display: inline-block;
     width: 550px;
     margin-top: 80px;
+    padding: 20px;
+    background-color: cornsilk;
+    border-radius: 0px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
 #cocktail_image_id {
@@ -30,3 +33,11 @@
     margin-top: 10px;
 }
 
+.description {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.instructions {
+    margin-top: 10px;
+}

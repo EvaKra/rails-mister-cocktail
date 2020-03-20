@@ -5,6 +5,9 @@
         <div class="description">
             <% @cocktail.doses.each do |dose|  %>
             <%= dose.description %> <%= dose.ingredient.name %><br>
+            <div class="instructions">
+                <%= dose.instruction %>
+            </div>
             <% end %>
         </div>
     </div>
